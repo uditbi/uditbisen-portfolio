@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Udit Bisen — Business Intelligence &amp; Analytics</title>
+<meta name="description" content="Udit Bisen — Business Intelligence & Analytics professional and data-driven storyteller. Transforming complex datasets into strategic business growth." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23070b12'/%3E%3Ctext x='50' y='68' font-family='sans-serif' font-size='46' font-weight='700' fill='%2364f4c6' text-anchor='middle'%3EUB%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ AMBIENT BACKDROP ============ -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="grid-overlay"></div>
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="aurora aurora-3"></div>
+  <div class="noise"></div>
+</div>
+
+<!-- Custom cursor glow -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#hero" class="brand" data-scroll>
+    <span class="brand-mark">UB</span>
+    <span class="brand-text">Udit Bisen</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about" data-scroll>About</a>
+    <a href="#experience" data-scroll>Experience</a>
+    <a href="#work" data-scroll>Work</a>
+    <a href="#leadership" data-scroll>Leadership</a>
+    <a href="#contact" data-scroll>Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="nav-cta" href="#contact" data-scroll>
+      <i data-lucide="sparkles"></i> Let's talk
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-scroll><i data-lucide="user-round"></i> About</a>
+  <a href="#experience" data-scroll><i data-lucide="briefcase"></i> Experience</a>
+  <a href="#work" data-scroll><i data-lucide="bar-chart-3"></i> Work</a>
+  <a href="#leadership" data-scroll><i data-lucide="award"></i> Leadership</a>
+  <a href="#contact" data-scroll><i data-lucide="mail"></i> Contact</a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="pill reveal" data-delay="0">
+      <span class="dot"></span> Available for BI &amp; Analytics roles
+    </div>
+
+    <h1 class="hero-name reveal" data-delay="60" aria-label="Udit Bisen">
+      <span class="word"><span>UDIT</span></span>
+      <span class="word accent"><span>BISEN</span></span>
+    </h1>
+
+    <p class="hero-title reveal" data-delay="140">
+      Business Intelligence &amp; Analytics
+      <span class="sep">|</span>
+      <span class="grad-text">Data-Driven Storyteller</span>
+    </p>
+
+    <p class="hero-tagline reveal" data-delay="200">
+      Transforming complex datasets into strategic business growth.
+    </p>
+
+    <div class="typing reveal" data-delay="260" aria-live="polite">
+      <span class="typing-label"><i data-lucide="terminal"></i> focused on</span>
+      <span class="typing-text" id="typingText"></span><span class="caret" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero-ctas reveal" data-delay="320">
+      <button class="btn btn-primary magnetic" id="viewWorkBtn" data-magnetic>
+        <span class="btn-inner">
+          <i data-lucide="arrow-down-right"></i> View My Work
+        </span>
+      </button>
+      <a class="btn btn-ghost magnetic" href="#contact" data-scroll data-magnetic>
+        <span class="btn-inner"><i data-lucide="mail"></i> Get in touch</span>
+      </a>
+    </div>
+
+    <div class="hero-stats reveal" data-delay="380">
+      <div class="stat">
+        <span class="stat-num" data-count="40" data-suffix="+">0</span>
+        <span class="stat-label">Product categories analysed</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="100" data-suffix="+">0</span>
+        <span class="stat-label">Simulation participants led</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="3" data-suffix="">0</span>
+        <span class="stat-label">Leadership laurels</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" data-scroll aria-label="Scroll to about">
+    <span class="mouse"><span class="wheel"></span></span>
+    <span>scroll</span>
+  </a>
+
+  <!-- Floating dashboard ornament -->
+  <div class="hero-ornament" aria-hidden="true">
+    <div class="orn-card orn-1">
+      <i data-lucide="trending-up"></i>
+      <div><b>+14.2%</b><small>Sales growth</small></div>
+    </div>
+    <div class="orn-card orn-2">
+      <i data-lucide="pie-chart"></i>
+      <div><b>98%</b><small>Fulfilment</small></div>
+    </div>
+    <div class="orn-card orn-3">
+      <i data-lucide="database"></i>
+      <div><b>40+</b><small>Categories</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / SKILLS MATRIX ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal"><i data-lucide="layout-grid"></i> Professional Summary</span>
+      <h2 class="section-title reveal" data-delay="60">
+        The <span class="grad-text">Analytics Matrix</span>
+      </h2>
+      <p class="section-lead reveal" data-delay="120">
+        Business Intelligence &amp; Analytics graduate experienced in market research, data analytics, and
+        business consulting support. Passionate about business transformation and helping organizations
+        improve operational performance through analytical insights.
+      </p>
+    </div>
+
+    <div class="matrix">
+      <!-- Card 1 -->
+      <article class="matrix-card reveal tilt" data-delay="0">
+        <div class="matrix-head">
+          <span class="matrix-icon"><i data-lucide="briefcase-business"></i></span>
+          <div>
+            <h3>Business Consulting</h3>
+            <p>Framing problems, shaping strategy, aligning people.</p>
+          </div>
+        </div>
+        <ul class="chips" data-stagger>
+          <li class="chip"><i data-lucide="search-check"></i> Business Analysis</li>
+          <li class="chip"><i data-lucide="chart-no-axes-combined"></i> Market Research</li>
+          <li class="chip"><i data-lucide="building-2"></i> Industry Analysis</li>
+          <li class="chip"><i data-lucide="target"></i> Strategic Analysis</li>
+          <li class="chip"><i data-lucide="users"></i> Stakeholder Management</li>
+          <li class="chip"><i data-lucide="book-open-text"></i> Data Storytelling</li>
+        </ul>
+        <span class="card-glow" aria-hidden="true"></span>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="matrix-card reveal tilt" data-delay="100">
+        <div class="matrix-head">
+          <span class="matrix-icon"><i data-lucide="chart-spline"></i></span>
+          <div>
+            <h3>Analytics &amp; BI</h3>
+            <p>From raw data to decisions executives can act on.</p>
+          </div>
+        </div>
+        <ul class="chips" data-stagger>
+          <li class="chip"><i data-lucide="goal"></i> KPI Development</li>
+          <li class="chip"><i data-lucide="layout-dashboard"></i> Dashboard Reporting</li>
+          <li class="chip"><i data-lucide="bar-chart-3"></i> Data Visualization</li>
+          <li class="chip"><i data-lucide="eraser"></i> Data Cleaning</li>
+          <li class="chip"><i data-lucide="trending-up"></i> Trend Analysis</li>
+          <li class="chip"><i data-lucide="cpu"></i> Business Intelligence</li>
+        </ul>
+        <span class="card-glow" aria-hidden="true"></span>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="matrix-card reveal tilt" data-delay="200">
+        <div class="matrix-head">
+          <span class="matrix-icon"><i data-lucide="wrench"></i></span>
+          <div>
+            <h3>Core Tools</h3>
+            <p>The stack behind every insight I ship.</p>
+          </div>
+        </div>
+        <ul class="chips chips-tools" data-stagger>
+          <li class="chip chip-tool"><i data-lucide="file-spreadsheet"></i> Advanced Excel</li>
+          <li class="chip chip-tool"><i data-lucide="chart-column-big"></i> Power BI</li>
+          <li class="chip chip-tool"><i data-lucide="gauge"></i> Tableau</li>
+          <li class="chip chip-tool"><i data-lucide="database"></i> SQL (Basic)</li>
+          <li class="chip chip-tool"><i data-lucide="workflow"></i> Power Query</li>
+          <li class="chip chip-tool"><i data-lucide="presentation"></i> PowerPoint</li>
+        </ul>
+        <div class="tool-bars">
+          <div class="tool-bar"><span>Power BI</span><div class="track"><i style="--w:92%"></i></div></div>
+          <div class="tool-bar"><span>Excel</span><div class="track"><i style="--w:95%"></i></div></div>
+          <div class="tool-bar"><span>Tableau</span><div class="track"><i style="--w:78%"></i></div></div>
+          <div class="tool-bar"><span>SQL</span><div class="track"><i style="--w:65%"></i></div></div>
+        </div>
+        <span class="card-glow" aria-hidden="true"></span>
+      </article>
+    </div>
+
+    <div class="edu-strip reveal">
+      <div class="edu-item">
+        <i data-lucide="graduation-cap"></i>
+        <div><b>BBA — Business Intelligence &amp; Analytics</b><small>LNCT University, Bhopal · 2025</small></div>
+      </div>
+      <div class="edu-item">
+        <i data-lucide="school"></i>
+        <div><b>Class XII — MP Board</b><small>New Sankalp Higher Secondary School, Sausar · 2022</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal"><i data-lucide="briefcase"></i> Experience</span>
+      <h2 class="section-title reveal" data-delay="60">Where the <span class="grad-text">work happened</span></h2>
+      <p class="section-lead reveal" data-delay="120">
+        Turning export data, market research and design craft into decisions a state-level
+        trade ecosystem could actually use.
+      </p>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <span class="timeline-track" aria-hidden="true"><span class="timeline-fill" id="timelineFill"></span></span>
+
+      <div class="tl-item reveal">
+        <span class="tl-node" aria-hidden="true"><i data-lucide="sparkle"></i></span>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div>
+              <h3>Analyst &amp; Designer</h3>
+              <p class="tl-org">Incubation Master Pvt. Ltd. <span class="tl-org-tag">MPIDC Office</span></p>
+            </div>
+            <span class="tl-date"><i data-lucide="calendar"></i> Nov 2025 – Mar 2026</span>
+          </div>
+
+          <ul class="tl-achievements">
+            <li><i data-lucide="check"></i><span>Analyzed export datasets across multiple districts covering <b>40+ product categories</b>.</span></li>
+            <li><i data-lucide="check"></i><span>Built interactive <b>Power BI dashboards</b> to track export trends, category performance and regional trade insights.</span></li>
+            <li><i data-lucide="check"></i><span>Conducted <b>secondary market research</b> to support trade promotion and policy recommendations.</span></li>
+            <li><i data-lucide="check"></i><span>Designed <b>promotional visuals &amp; banners</b> for the digital outreach strategy.</span></li>
+            <li><i data-lucide="check"></i><span>Contributed to digital outreach by creating <b>data-driven content</b> aligned with trade insights.</span></li>
+          </ul>
+
+          <div class="tl-tags">
+            <span>Power BI</span><span>Market Research</span><span>Export Data</span><span>Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="80">
+        <span class="tl-node" aria-hidden="true"><i data-lucide="flag"></i></span>
+        <div class="tl-card tl-card-sm">
+          <div class="tl-top">
+            <div>
+              <h3>Start of the data story</h3>
+              <p class="tl-org">BBA — Business Intelligence &amp; Analytics</p>
+            </div>
+            <span class="tl-date"><i data-lucide="calendar"></i> 2022 – 2025</span>
+          </div>
+          <ul class="tl-achievements">
+            <li><i data-lucide="check"></i><span>Built a foundation in business analysis, KPI design, dashboards and process improvement at LNCT University.</span></li>
+            <li><i data-lucide="check"></i><span>Applied classroom frameworks to live projects — including the Blinkit sales performance analysis.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS / WORK ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal"><i data-lucide="bar-chart-3"></i> Academic Projects</span>
+      <h2 class="section-title reveal" data-delay="60">Inside the <span class="grad-text">executive dashboard</span></h2>
+      <p class="section-lead reveal" data-delay="120">
+        A live mockup of the Blinkit analysis — KPIs, category contribution and fulfilment, rendered the way a
+        business would actually read it.
+      </p>
+    </div>
+
+    <article class="dashboard reveal">
+      <div class="dash-chrome">
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="dash-title"><i data-lucide="layout-dashboard"></i> Blinkit Sales Performance Analysis</span>
+        <span class="dash-year">2024</span>
+      </div>
+
+      <div class="dash-body">
+        <div class="dash-side">
+          <span class="side-item active"><i data-lucide="gauge"></i> Overview</span>
+          <span class="side-item"><i data-lucide="box"></i> Inventory</span>
+          <span class="side-item"><i data-lucide="smile"></i> Satisfaction</span>
+          <span class="side-item"><i data-lucide="layers"></i> Categories</span>
+        </div>
+
+        <div class="dash-main">
+          <div class="kpi-row">
+            <div class="kpi">
+              <span class="kpi-label"><i data-lucide="trending-up"></i> Sales Growth Rate</span>
+              <span class="kpi-value" data-count="14.2" data-prefix="+" data-suffix="%" data-decimals="1">+0%</span>
+              <span class="kpi-delta up"><i data-lucide="arrow-up-right"></i> vs. previous cycle</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label"><i data-lucide="package-check"></i> Fulfilment</span>
+              <span class="kpi-value" data-count="98" data-suffix="%">0%</span>
+              <span class="kpi-delta up"><i data-lucide="arrow-up-right"></i> operational efficiency</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label"><i data-lucide="layers"></i> Category Contribution</span>
+              <span class="kpi-value" data-count="62" data-suffix="%">0%</span>
+              <span class="kpi-delta"><i data-lucide="pie-chart"></i> top 3 categories</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label"><i data-lucide="smile"></i> Satisfaction Score</span>
+              <span class="kpi-value" data-count="4.6" data-suffix="/5" data-decimals="1">0/5</span>
+              <span class="kpi-delta"><i data-lucide="star"></i> customer ratings</span>
+            </div>
+          </div>
+
+          <div class="chart-panel">
+            <div class="chart-head">
+              <h4>Revenue by category</h4>
+              <span class="chart-legend"><i class="lg lg-1"></i> Revenue <i class="lg lg-2"></i> Fulfilment</span>
+            </div>
+            <div class="chart" role="img" aria-label="Bar chart of revenue by product category">
+              <div class="bar" style="--h:78%"><span class="bar-fill"></span><span class="bar-label">Fruits &amp; Veg</span></div>
+              <div class="bar" style="--h:64%"><span class="bar-fill"></span><span class="bar-label">Snacks</span></div>
+              <div class="bar" style="--h:92%"><span class="bar-fill"></span><span class="bar-label">Dairy</span></div>
+              <div class="bar" style="--h:47%"><span class="bar-fill"></span><span class="bar-label">Beverages</span></div>
+              <div class="bar" style="--h:71%"><span class="bar-fill"></span><span class="bar-label">Household</span></div>
+              <div class="bar" style="--h:38%"><span class="bar-fill"></span><span class="bar-label">Personal Care</span></div>
+              <div class="bar" style="--h:56%"><span class="bar-fill"></span><span class="bar-label">Frozen</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-foot">
+        <p>
+          Analysed sales, inventory distribution and customer satisfaction data. Developed KPIs including sales
+          growth rate, category contribution and fulfilment metrics to identify optimisation opportunities through
+          trend analysis and performance benchmarking.
+        </p>
+        <div class="dash-tags"><span>Power BI</span><span>KPI Design</span><span>Excel</span><span>Trend Analysis</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP / BENTO ============ -->
+<section class="section" id="leadership">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal"><i data-lucide="award"></i> Leadership &amp; Laurels</span>
+      <h2 class="section-title reveal" data-delay="60">Building rooms, not just <span class="grad-text">reports</span></h2>
+      <p class="section-lead reveal" data-delay="120">
+        Hackathons, business simulations and campus fests — the places where analysis meets people.
+      </p>
+    </div>
+
+    <div class="bento">
+      <article class="bento-card bento-lg reveal tilt">
+        <span class="bento-icon"><i data-lucide="rocket"></i></span>
+        <span class="bento-tag">Core Organizer · 2026</span>
+        <h3>Hack&amp;Make 2026</h3>
+        <p>
+          Core organiser for a state-level hackathon focused on tech, manufacturing &amp; exports — coordinating
+          problem statements aligned with ODOP, MSMEs and global markets, and managing stakeholder
+          communication across startups, mentors, judges and partners.
+        </p>
+        <div class="bento-chips"><span>ODOP</span><span>MSME</span><span>Exports</span><span>Ops</span></div>
+        <span class="bento-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="bento-card reveal tilt" data-delay="80">
+        <span class="bento-icon"><i data-lucide="users-round"></i></span>
+        <span class="bento-tag">Coordinator · AIMA 2025</span>
+        <h3>Chanakya Business Simulation</h3>
+        <p>Led 100+ participants in regional rounds, managing logistics, registrations and faculty collaboration.</p>
+        <div class="bento-metric"><b>100+</b><small>participants led</small></div>
+        <span class="bento-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="bento-card reveal tilt" data-delay="160">
+        <span class="bento-icon"><i data-lucide="trophy"></i></span>
+        <span class="bento-tag">LNCT University · 2025</span>
+        <h3>Achiever's Award &amp; Certificate of Excellence</h3>
+        <p>Recognised for excellence in event management and leadership during the BBA — Business Intelligence &amp; Analytics programme.</p>
+        <span class="bento-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="bento-card bento-wide reveal tilt" data-delay="240">
+        <span class="bento-icon"><i data-lucide="calendar-check"></i></span>
+        <span class="bento-tag">Techno-Management Fest</span>
+        <h3>Event Coordination</h3>
+        <p>Led volunteer teams to plan, schedule and execute annual college fest operations — cross-functional teams, high-pressure timelines, real stakeholders.</p>
+        <div class="bento-chips"><span>Team Leadership</span><span>Planning</span><span>Execution</span></div>
+        <span class="bento-glow" aria-hidden="true"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <span class="eyebrow"><i data-lucide="send"></i> Contact</span>
+      <h2 class="contact-title">
+        Let's turn your data into a <span class="grad-text">decision</span>.
+      </h2>
+      <p class="contact-lead">
+        Open to Business Intelligence, Analytics and Consulting roles. Drop a line — I reply fast.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-link magnetic" href="mailto:udit0695@gmail.com" data-magnetic>
+          <span class="ci"><i data-lucide="mail"></i></span>
+          <span class="cl"><small>Email</small><b>udit0695@gmail.com</b></span>
+          <span class="ca"><i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a class="contact-link magnetic" href="https://www.linkedin.com/in/udit-bisen-8aa031217" target="_blank" rel="noopener" data-magnetic>
+          <span class="ci"><i data-lucide="linkedin"></i></span>
+          <span class="cl"><small>LinkedIn</small><b>linkedin.com/in/udit-bisen-8aa031217</b></span>
+          <span class="ca"><i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a class="contact-link magnetic" href="tel:+917974768104" data-magnetic>
+          <span class="ci"><i data-lucide="phone"></i></span>
+          <span class="cl"><small>Phone</small><b>+91-7974768104</b></span>
+          <span class="ca"><i data-lucide="arrow-up-right"></i></span>
+        </a>
+        <a class="contact-link magnetic" href="mailto:udit0695@gmail.com?subject=Resume%20request" data-magnetic>
+          <span class="ci"><i data-lucide="file-text"></i></span>
+          <span class="cl"><small>Résumé</small><b>Request a copy</b></span>
+          <span class="ca"><i data-lucide="arrow-up-right"></i></span>
+        </a>
+      </div>
+
+      <button class="btn btn-primary big magnetic" id="copyEmailBtn" data-magnetic>
+        <span class="btn-inner"><i data-lucide="copy"></i> Copy email address</span>
+      </button>
+      <p class="copy-toast" id="copyToast" role="status">Email copied to clipboard ✓</p>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="brand-mark small">UB</span>
+        <span>© <span id="year"></span> Udit Bisen. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/udit-bisen-8aa031217" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:udit0695@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="tel:+917974768104" aria-label="Phone"><i data-lucide="phone"></i></a>
+      </div>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
